@@ -8,16 +8,17 @@ btn.addEventListener("click", ()=>{
 
 	const radval=radius.value
 	let vol= "NaN"
-
+let r=radval
 	if(radval>1)
 	{
 		vol= (4 / 3) * Math.PI * r ** 3;
 	}
 
+  volume.value = vol.toFixed(4);
 	
 })
 
-	volume.append(vol)
+
 
 
 
